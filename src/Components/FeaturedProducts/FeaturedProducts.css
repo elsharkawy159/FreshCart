@@ -1,0 +1,45 @@
+.product {
+  min-height: 435px !important;
+  transition: all 0.4s ease !important;
+}
+.product:hover {
+  box-shadow: var(--shadow);
+  border-bottom: solid 1px var(--main-color);
+}
+.product img {
+  transition: all 0.3s ease !important;
+}
+.price {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+.fa-star {
+  color: #ffb356;
+}
+.product:hover img {
+  transform: scale(1.05);
+}
+.product .btn {
+  transition: transform 1s, opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+@media screen and (max-width: 767px) {
+  .product .btn {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  .product {
+    box-shadow: var(--shadow);
+    border-bottom: solid 1px var(--main-color);
+    margin: 10px 0;
+  }
+  .card-title {
+    text-align: center;
+  }
+}

@@ -1,0 +1,18 @@
+.brand {
+  transition: all 0.4s ease !important;
+}
+.brand img {
+  transition: all 0.3s ease !important;
+}
+.brand:hover img {
+  transform: scale(1.05);
+}
+.brand h3 {
+  transition: all 0.3s ease !important;
+}
+.brand:hover h3 {
+  color: var(--main-color);
+}
+.brand:hover {
+  box-shadow: var(--shadow);
+}

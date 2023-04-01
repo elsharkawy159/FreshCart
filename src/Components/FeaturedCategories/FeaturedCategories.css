@@ -1,0 +1,12 @@
+.Category {
+  transition: all 0.2s ease;
+}
+.Category h3 {
+  transition: all 0.2s ease;
+}
+.Category:hover {
+  box-shadow: var(--shadow);
+}
+.Category:hover h3 {
+  color: var(--main-color);
+}

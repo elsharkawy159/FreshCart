@@ -1,0 +1,25 @@
+.cart {
+  font-size: 9px;
+}
+.navbar-nav {
+  align-items: center;
+}
+@media screen and (max-width: 991px) {
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .socialIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .cart {
+    display: flex;
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
