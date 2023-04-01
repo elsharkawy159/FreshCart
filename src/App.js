@@ -40,7 +40,7 @@ export default function App() {
   console.log(UserData);
   const routers = createBrowserRouter([
     {
-      path: "",
+      path: "FreshCart",
       element: <Layout UserData={UserData} logOut={logOut} />,
       children: [
         { index: true, element: <Home setisLoading={setisLoading} /> },
