@@ -26,7 +26,6 @@ export default function App() {
       localStorage.setItem("cartItems", JSON.stringify([]));
     }
   }, []);
-
   function userData() {
     let encodedUserData = localStorage.getItem("userToken");
     let decodedUserData = jwtDecode(encodedUserData);
@@ -36,8 +35,6 @@ export default function App() {
     localStorage.removeItem("userToken");
     setUserData(null);
   }
-
-  console.log(UserData);
   const routers = createBrowserRouter([
     {
       path: "/FreshCart",
@@ -45,7 +42,7 @@ export default function App() {
       children: [
         { index: true, element: <Home setisLoading={setisLoading} /> },
         {
-          path: "/FreshCart/Products",
+          path: "/Products",
           element: <Products setisLoading={setisLoading} />,
         },
         {
