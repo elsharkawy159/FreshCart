@@ -40,7 +40,7 @@ export default function App() {
       path: "/freshcart",
       element: <Layout UserData={UserData} logOut={logOut} />,
       children: [
-        { path: "/", element: <Home setisLoading={setisLoading} /> },
+        { path: "/freshcart", element: <Home setisLoading={setisLoading} /> },
         {
           path: "/Products",
           element: <Products setisLoading={setisLoading} />,
