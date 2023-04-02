@@ -1,6 +1,7 @@
 .product {
   min-height: 435px !important;
   transition: all 0.4s ease !important;
+  margin: 10px 0;
 }
 .product:hover {
   box-shadow: var(--shadow);
