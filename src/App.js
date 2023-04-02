@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home/Home";
-import NotFound from "./Components/NotFound/NotFound";
+// import NotFound from "./Components/NotFound/NotFound";
 import Categories from "./Components/Categories/Categories";
 import Layout from "./Components/Layout/Layout";
 import Products from "./Components/Products/Products";
@@ -40,7 +40,7 @@ export default function App() {
       path: "/FreshCart",
       element: <Layout UserData={UserData} logOut={logOut} />,
       children: [
-        { path: "/freshcart", element: <Home setisLoading={setisLoading} /> },
+        { path: "/", element: <Home setisLoading={setisLoading} /> },
         {
           path: "/Products",
           element: <Products setisLoading={setisLoading} />,
@@ -60,7 +60,7 @@ export default function App() {
           element: <Login userData={userData} />,
         },
         { path: "/Register", element: <Register /> },
-        { path: "*", element: <NotFound /> },
+        // { path: "*", element: <NotFound /> },
       ],
     },
   ]);
