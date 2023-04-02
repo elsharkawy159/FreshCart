@@ -60,7 +60,7 @@ export default function App() {
           element: <Login userData={userData} />,
         },
         { path: "/Register", element: <Register /> },
-        { path: "/FreshCart", element: <NotFound /> },
+        { path: "*", element: <NotFound /> },
       ],
     },
   ]);
