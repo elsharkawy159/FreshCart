@@ -35,6 +35,35 @@ export default function App() {
     localStorage.removeItem("userToken");
     setUserData(null);
   }
+  const routers = createBrowserRouter([
+    {
+      path: "/FreshCart",
+      element: <Layout UserData={UserData} logOut={logOut} />,
+      children: [
+        { path: "/", element: <Home setisLoading={setisLoading} /> },
+        {
+          path: "/Products",
+          element: <Products setisLoading={setisLoading} />,
+        },
+        {
+          path: "/productdetails/:id",
+          element: <ProductDetails setisLoading={setisLoading} />,
+        },
+        {
+          path: "/Categories",
+          element: <Categories setisLoading={setisLoading} />,
+        },
+        { path: "/Brands", element: <Brands setisLoading={setisLoading} /> },
+        { path: "/Cart", element: <Cart /> },
+        {
+          path: "/Login",
+          element: <Login userData={userData} />,
+        },
+        { path: "/Register", element: <Register /> },
+        { path: "*", element: <NotFound /> },
+      ],
+    },
+  ]);
 
   return (
     <>
