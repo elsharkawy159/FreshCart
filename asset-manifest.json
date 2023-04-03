@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/FreshCart/static/css/main.f43ec0af.css",
+    "main.css": "/FreshCart/static/css/main.75823955.css",
     "main.js": "/FreshCart/static/js/main.eca82f8e.js",
     "static/media/fa-solid-900.ttf": "/FreshCart/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/2.jpg": "/FreshCart/static/media/2.8e4fa4bd491854244925.jpg",
@@ -25,11 +25,11 @@
     "static/media/slick.woff": "/FreshCart/static/media/slick.295183786cd8a1389865.woff",
     "static/media/Mastercard-Logo.wine.svg": "/FreshCart/static/media/Mastercard-Logo.wine.a926ed912779093767a0cd8687855a5f.svg",
     "index.html": "/FreshCart/index.html",
-    "main.f43ec0af.css.map": "/FreshCart/static/css/main.f43ec0af.css.map",
+    "main.75823955.css.map": "/FreshCart/static/css/main.75823955.css.map",
     "main.eca82f8e.js.map": "/FreshCart/static/js/main.eca82f8e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f43ec0af.css",
+    "static/css/main.75823955.css",
     "static/js/main.eca82f8e.js"
   ]
 }
